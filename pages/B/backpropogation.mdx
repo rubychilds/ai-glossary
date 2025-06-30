@@ -1,10 +1,29 @@
 # Backpropagation
 
-Short Definition: An algorithm used to train neural networks by calculating and propagating errors backward through the network.
+An algorithm used to train neural networks by calculating and propagating errors backward through the network.
 
-Longer Definition: Backpropagation calculates the gradient of the loss function with respect to each weight in the neural network. It works by computing the error at the output layer and then propagating this error backward through the network layers, adjusting weights to minimize future errors.
+![backward_propogation.jpg](public/backward_propogation.jpg)
 
-Examples: Used in training deep neural networks for image recognition, natural language processing, and most modern AI applications.
+Back and forward propogation are the passing of input data in a neural network, where the network layer's compute to create an output, or error. As data goes through a network, in a forward motion, being forward propogation, an output is created. As the data, goes backward, with backpropogation, the network calculates an error between the predicted and target output. Neural networks learn through this passing of data, back and forth.
 
-Challenges: Can suffer from vanishing or exploding gradients in very deep networks, may get stuck in local minima, and requires careful hyperparameter tuning.
-History: Developed in the 1970s and popularized in the 1980s by Rumelhart, Hinton, and Williams. It became the foundation for training most neural networks.
+Training of a neural network involves using gradient descent, an iterative optimization algorithm for discovering a local minimum of a differentiable function. Backpropagation calculates the gradient of the loss function with respect to each weight in the neural network. This loss function is computerd to measure the difference between the networks predictions and the actual value. By computing the error at the output layer, then propagating this error backward through the network layers, the network adjusts weights to minimize future errors.
+
+## Types of Backpropogation
+
+Backpropagation comes in two main types: static and recurrent, each suited to different neural network architectures and problem types.
+
+**Static backpropagation** is used in feedforward networks and CNNs where data points are independent of each other. The algorithm accumulates gradients across batches of data and updates parameters in a single step, making it efficient for parallel processing on modern hardware. This approach works well for static classification tasks like optical character recognition.
+
+**Recurrent backpropagation** extends the standard algorithm for RNNs, where data flows in cycles and networks must retain information from previous time steps. The algorithm propagates errors backward through time, calculating gradients across multiple time steps while accounting for temporal dependencies. This enables the network to learn sequential patterns, making it suitable for tasks like natural language processing, speech recognition, and time series prediction where the order and timing of data matter.
+
+## Challenges
+
+Can suffer from vanishing or exploding gradients in very deep networks, may get stuck in local minima, and requires careful hyperparameter tuning.
+
+## History
+
+Developed in the 1970s and popularized in the 1980s by Rumelhart, Hinton, and Williams. It became the foundation for training most neural networks.
+
+#### Sources
+
+[Backpropogation in Neural Networks](https://serokell.io/blog/understanding-backpropagation) | Inna Logunova | December 18th, 2023
