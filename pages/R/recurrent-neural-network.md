@@ -30,7 +30,6 @@ $W_hy$ maps hidden state to output
 
 **Recurrent Connection:** The crucial feature distinguishing RNNs is the connection from the hidden state back to itself, creating a loop that allows information to persist across time steps.
 
-
 ## Key Challenges
 
 Recurrent Neural Networks (RNNs) face several fundamental challenges that have driven the development of more advanced architectures like LSTMs, GRUs, and eventually transformers.

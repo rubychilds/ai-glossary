@@ -6,17 +6,23 @@ An epoch represents a full cycle where the learning algorithm has processed ever
 
 ## Basic Definition
 - **Complete Dataset Traversal** means that during one epoch, every single training example has been used exactly once to update the model's parameters. If a dataset contains 10,000 examples, one epoch involves processing all 10,000 examples.
+
 - **Training Cycle Unit** provides a standardized way to measure and compare training progress across different datasets and model architectures, regardless of dataset size or batch configuration.
+
 - **Parameter Update Frequency** determines how often the model's weights are adjusted based on the learning rate and optimization algorithm being used.
 
 ## Relationship to Batches
 - **Batch Processing** divides the dataset into smaller chunks called batches that are processed together. One epoch consists of multiple batch processing steps until the entire dataset is covered.
+
 - **Iterations** per Epoch equals the total number of training examples divided by the batch size. A dataset of 1,000 examples with a batch size of 50 requires 20 iterations to complete one epoch.
+
 - **Gradient Updates** occur after each batch, meaning the model's parameters are updated multiple times within a single epoch, with the frequency depending on the chosen batch size.
 
 ## Training Progression
 - Multi-Epoch Training is standard practice, with models typically trained for dozens, hundreds, or even thousands of epochs depending on the complexity of the task and dataset size.
+
 - Convergence Monitoring tracks how model performance changes across epochs, looking for signs that the model is learning effectively or has reached optimal performance.
+
 - Early Stopping uses epoch-based monitoring to halt training when performance on validation data stops improving, preventing overfitting and saving computational resources.
 
 ### What is the right number of epochs?
@@ -31,7 +37,8 @@ You should set the number of epochs as high as possible and terminate the traini
 Middle Epochs typically demonstrate steady, gradual improvement as the model fine-tunes its understanding and optimizes parameter values.
 
 **Later Epochs** may show diminishing returns or signs of overfitting, where training performance continues improving but validation performance plateaus or degrades.
-Hyperparameter Considerations
+
+**Hyperparameter Considerations**
 Learning Rate Scheduling often adjusts the learning rate based on epoch number, starting with higher rates for faster initial learning and reducing rates in later epochs for fine-tuning.
 
 **Epoch Budget** represents the computational resources available for training, with researchers often needing to balance thoroughness with practical time and cost constraints.
@@ -40,28 +47,36 @@ Learning Rate Scheduling often adjusts the learning rate based on epoch number, 
 
 ## Practical Examples
 - Image Classification might require 100-200 epochs to train a CNN on a dataset like CIFAR-10, with each epoch processing all 50,000 training images once.
+
 - Language Model Training can involve thousands of epochs when working with large text corpora, as the model gradually learns complex linguistic patterns and relationships.
+
 - Neural Machine Translation typically requires several hundred epochs to achieve good performance, with careful monitoring to prevent overfitting to specific language pairs.
 
 ## Monitoring and Visualization
 - Training Curves plot metrics like loss and accuracy against epoch number, providing visual feedback about learning progress and potential issues.
+
 - Epoch Logs record detailed statistics for each epoch, including training loss, validation accuracy, learning rates, and timing information.
+
 - Checkpointing saves model state at regular epoch intervals, enabling recovery from failures and comparison of performance across different training stages.
 
 ![Epoch Curve](public/epoch.webp)
 
 ## Common Patterns
 - Overfitting Detection appears when training metrics continue improving across epochs while validation metrics stagnate or worsen, indicating the model is memorizing rather than generalizing.
+
 - Underfitting Signs include poor performance on both training and validation data even after many epochs, suggesting the model needs more capacity or different architecture.
+
 - Learning Rate Issues manifest as erratic performance across epochs (too high) or extremely slow improvement (too low), requiring adjustment of optimization parameters.
 
 ## Modern Considerations
 Large Dataset Training with millions or billions of examples may require only a few epochs due to the massive amount of information processed in each complete pass.
+
 Transfer Learning often needs fewer epochs when fine-tuning pre-trained models, as the model starts with existing knowledge rather than random initialization.
+
 Distributed Training must coordinate epoch counting across multiple machines or GPUs, ensuring consistent training progress measurement in parallel computing environments.
 
 ## Best Practices
-- Validation After Each Epoch provides regular feedback about generalization performance and helps identify optimal stopping points.
-- Learning Rate Decay gradually reduces the learning rate as epoch count increases, helping models converge to better solutions.
-- Model Checkpointing saves the best-performing model based on validation metrics rather than simply the final epoch, ensuring optimal model selection.
-- Epochs provide the fundamental rhythm of machine learning training, offering a natural way to structure the learning process, monitor progress, and make decisions about when models have learned enough to be useful for their intended applications.RetryClaude can make mistakes. Please double-check responses.
+- *Validation After Each Epoch* provides regular feedback about generalization performance and helps identify optimal stopping points.
+- *Learning Rate Decay* gradually reduces the learning rate as epoch count increases, helping models converge to better solutions.
+- *Model Checkpointing* saves the best-performing model based on validation metrics rather than simply the final epoch, ensuring optimal model selection.
+- *Epochs* provide the fundamental rhythm of machine learning training, offering a natural way to structure the learning process, monitor progress, and make decisions about when models have learned enough to be useful for their intended applications.
