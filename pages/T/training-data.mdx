@@ -4,6 +4,11 @@ The dataset used to teach machine learning models patterns and relationships.
 
 Training data consists of examples that algorithms use to learn patterns, make associations, and build predictive models. The quality, quantity, and representativeness of training data fundamentally determines model performance and capabilities.
 
-Examples: Images with labels for computer vision, text corpora for language models, historical sales data for forecasting, medical records for diagnosis systems.
+## Data Splitting Strategy
+- **Train-Validation-Test Split** is the standard approach, typically dividing data into roughly 70% training, 15% validation, and 15% test sets, though proportions vary based on dataset size and specific requirements.
+- **Temporal Splitting** is crucial for time series data, where test data must come from a later time period than training data to simulate real-world prediction scenarios.
+- **Stratified Sampling** ensures test data maintains the same distribution of classes or important characteristics as the overall dataset, preventing biased evaluation results.
+
+
 
 Challenges: Data quality and consistency, ensuring sufficient quantity and diversity, handling bias and representativeness, privacy and ethical concerns, and managing costs of data collection and labeling.

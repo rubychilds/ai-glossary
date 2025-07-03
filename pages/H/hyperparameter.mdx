@@ -1,0 +1,26 @@
+# Hyperparameters
+
+Configuration settings that control how a machine learning algorithm learns, set before training begins.
+
+A hyperparameter is a configuration setting that controls how a machine learning model learns, but is not learned by the model itself during training. Think of hyperparameters as the "settings" you adjust before training begins, similar to how you might adjust the temperature and time on an oven before baking.
+
+## Key Characteristics
+
+Hyperparameters are set by humans (or automated systems) before training starts and remain fixed during the training process. This distinguishes them from regular parameters, which the model learns and updates automatically as it processes training data.
+
+Examples: Learning rate, batch size, number of hidden layers, regularization strength, dropout rate, number of epochs.
+
+Challenges: Hyperparameter tuning is time-consuming and computationally expensive, interactions between hyperparameters are complex, and optimal values often depend on the specific dataset and task.
+
+## Common Examples
+- Learning rate - How quickly the model adjusts its internal weights based on errors. Too high and the model might overshoot optimal solutions; too low and training becomes extremely slow.
+- Batch size - How many training examples the model processes before updating its parameters. Affects both training speed and model performance.
+- Number of layers/neurons - The architecture decisions that determine model complexity and capacity.
+- Regularization strength - Controls how much the model is penalized for complexity, helping prevent overfitting.
+- Training epochs - How many times the model sees the entire training dataset.
+
+### Impact on Performance
+Choosing good hyperparameters is crucial for model success. Poor hyperparameter choices can lead to models that don't learn effectively, overfit to training data, or require excessive computational resources. The process of finding optimal hyperparameters is called "hyperparameter tuning" or "hyperparameter optimization."
+
+### Tuning Process
+Data scientists typically experiment with different hyperparameter combinations using techniques like grid search, random search, or more sophisticated methods like Bayesian optimization to find the settings that produce the best model performance.

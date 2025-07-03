@@ -2,8 +2,17 @@
 
 When AI models generate false or nonsensical information that appears plausible.
 
-Longer Definition: Hallucinations occur when AI systems, particularly language models, produce outputs that are factually incorrect, fabricated, or inconsistent with reality, despite appearing confident and coherent. This happens because models learn statistical patterns rather than true understanding.
+Hallucinations occur when AI systems, particularly language models, produce outputs that are factually incorrect, fabricated, or inconsistent with reality, despite appearing confident and coherent. This happens because models learn statistical patterns rather than true understanding.
 
-Examples: Chatbots citing non-existent research papers, generating fake historical events, or providing incorrect medical advice with confidence.
+Hallucinations happen when AI models generate responses by predicting what comes next based on patterns in their training data. When they encounter gaps in their knowledge or unclear prompts, they don't simply say "I don't know." Instead, they continue generating text that fits the expected pattern, essentially "filling in the blanks" with plausible-sounding but incorrect information.
 
-Challenges: Difficult to detect automatically, can mislead users who trust AI outputs, particularly problematic in high-stakes applications like healthcare or legal advice, and challenging to eliminate without reducing model creativity.
+## Types of Hallucinations
+- **Factual error** - Claiming historical events happened on wrong dates, attributing quotes to the wrong people, or inventing statistics
+- **Source fabrication** - Creating fake citations, non-existent research papers, or imaginary news articles
+- **Logical inconsistencies** - Providing contradictory information within the same response
+- **Fictional details** - Adding specific but false details to make responses seem more authoritative
+
+
+## Examples
+
+An AI might confidently state that a celebrity died in a car accident when they're actually alive, invent a Supreme Court case that never existed, or create detailed but fictional historical events with specific dates and locations.
