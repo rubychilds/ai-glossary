@@ -1,0 +1,5 @@
+# Naive Bayes
+
+Naive Bayes applies Bayes' theorem with a "naive" assumption that all features are independent of each other given the class label. Despite this often unrealistic assumption, it performs surprisingly well in many real-world applications. The algorithm calculates the probability of each class given the input features and selects the class with highest probability.
+
+Common variants include Gaussian Naive Bayes for continuous features, Multinomial for discrete counts (like word frequencies), and Bernoulli for binary features. It's particularly effective for text classification tasks like spam filtering and sentiment analysis. Naive Bayes requires relatively little training data, trains quickly, and handles multiple classes naturally. It's also interpretable since you can examine the probability contributions of different features. However, the independence assumption can limit performance when features are strongly correlated, and it can be sensitive to skewed data distributions.

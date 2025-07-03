@@ -6,21 +6,29 @@ Test data provides an unbiased evaluation of final model performance, while vali
 
 ## Data Splitting Strategy
 - **Train-Validation-Test Split** is the standard approach, typically dividing data into roughly 70% training, 15% validation, and 15% test sets, though proportions vary based on dataset size and specific requirements.
+
 - **Temporal Splitting** is crucial for time series data, where test data must come from a later time period than training data to simulate real-world prediction scenarios.
+
 - **Stratified Sampling** ensures test data maintains the same distribution of classes or important characteristics as the overall dataset, preventing biased evaluation results.
 
 ## Challenges
 
 - **Data Leakage** occurs when information from test data inadvertently influences model training through preprocessing steps, feature selection, or hyperparameter tuning performed on the entire dataset.
+
 - **Repeated Testing** on the same test set can lead to overfitting to the test data itself, as researchers may unconsciously optimize models to perform well on that specific evaluation set.
+
 - **Temporal Leakage** happens when future information is used to predict past events, creating unrealistically optimistic performance estimates that won't hold in real applications.
 
 ## Types of Test Data
 - **Hold-Out Test Sets** are created by randomly sampling from the available data and setting it aside before any model development begins.
+
 - **Cross-Validation** creates multiple test sets by repeatedly splitting data into training and testing portions, providing more robust performance estimates for smaller datasets.
+
 - **External Test Sets** come from completely different sources than training data, providing the most rigorous evaluation of model generalization capabilities.
 
 ## Evaluation Metrics
 - **Classification Metrics** like accuracy, precision, recall, and F1-score measure different aspects of model performance on test data, each highlighting different strengths or weaknesses.
+
 - **Regression Metrics** such as mean squared error, mean absolute error, and R-squared quantify how well models predict continuous values in test scenarios.
+
 - **Domain-Specific Metrics** are often needed for specialized applications, such as BLEU scores for translation tasks or perplexity for language models.
