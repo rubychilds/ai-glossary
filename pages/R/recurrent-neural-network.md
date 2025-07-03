@@ -68,7 +68,7 @@ Beyond the parallelization constraints, RNNs require storing intermediate states
 ### Limited Representational Capacity
 The simple recurrent structure limits the types of patterns RNNs can effectively learn. Complex linguistic phenomena, hierarchical structures, and intricate temporal relationships often exceed what basic RNN architectures can represent.
 
-Solutions and Evolution
+### Solutions and Evolution
 These challenges led to important innovations:
 
 LSTMs and GRUs introduced gating mechanisms to better control information flow and mitigate gradient problems, though they don't eliminate all issues.
@@ -95,7 +95,7 @@ Language Translation Apps like early versions of Google Translate used RNN encod
 ### Financial and Business Applications
 - Algorithmic Trading systems use RNNs to analyze sequences of market data, price movements, and trading volumes to make automated buy/sell decisions based on learned patterns. 
 - Credit Risk Assessment processes sequences of customer transaction history, payment patterns, and financial behavior to predict loan default probability.
-Supply Chain Optimization analyzes historical demand patterns, seasonal trends, and external factors to optimize inventory levels and logistics planning.
+- Supply Chain Optimization analyzes historical demand patterns, seasonal trends, and external factors to optimize inventory levels and logistics planning.
 
 ### Healthcare and Medical Applications
 
