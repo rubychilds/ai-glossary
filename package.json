@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "Ruby: AI Glossary",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Ruby: AI Glossary is a comprehensive glossary of AI terms, concepts, and technologies, designed to help Ruby developers understand and navigate the world of artificial intelligence.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/rubychilds/ai-glossary/issues.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Ruby Childs ruby.childs1@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/rubychilds/ai-glossary/issues"
   },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
