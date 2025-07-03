@@ -1,0 +1,5 @@
+# Random Forests
+
+Random forests combine many decision trees to create a more robust and accurate model. The "random" aspect comes from two sources: each tree is trained on a random subset of the training data (bootstrap sampling), and at each split, only a random subset of features is considered. Final predictions are made by averaging results from all trees (regression) or taking majority vote (classification).
+
+This ensemble approach reduces overfitting that plagues individual trees while maintaining much of their interpretability. Random forests can estimate feature importance, handle missing values reasonably well, and work effectively with little hyperparameter tuning. They're widely used because they often perform well out-of-the-box across many different problems, from predicting customer behavior to analyzing genomic data.
