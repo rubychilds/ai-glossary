@@ -2,12 +2,14 @@
   "index": "Introduction",
   "about": {
     "title": "About",
-    "type": "page"
+    "type": "page",
+    "href": "https://rubychilds.com/about",
+    "newWindow": true
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "mailto:ruby.childs1@gmail.com",
     "newWindow": true
   }
 }
