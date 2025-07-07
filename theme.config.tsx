@@ -53,6 +53,38 @@ const config: DocsThemeConfig = {
   content="/mstile-150x150.png" />
       <link rel="icon" type="image/x-icon" 
   href="/favicon.ico" />
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          :root {
+            --nextra-primary-hue: 189;
+            --nextra-primary-saturation: 96%;
+            --nextra-primary-lightness: 64%;
+          }
+          /* Button and interactive element styling */
+          .nx-bg-primary-600,
+          .nx-bg-blue-600,
+          button:focus,
+          button:hover,
+          .nx-border-primary-500:hover,
+          .nx-border-blue-500:hover {
+            background-color: #44DCFD !important;
+          }
+          /* Active/pressed states */
+          button:active,
+          .nx-bg-primary-700,
+          .nx-bg-blue-700 {
+            background-color: #3BC5E8 !important;
+          }
+          /* Highlight and selection colors */
+          ::selection {
+            background-color: #44DCFD40 !important;
+          }
+          .nx-border-primary-500,
+          .nx-border-blue-500 {
+            border-color: #44DCFD !important;
+          }
+        `
+      }} />
       <script async src={`https://www.googletagmanager.com/gtag
   /js?id=${process.env.GOOGLE_ANALYTICS_ID}`} />
       <script dangerouslySetInnerHTML={{
