@@ -34,7 +34,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/rubychilds/ai-glossary',
   footer: {
-    text: 'AI Glossary',
+    text: 'AI Glossary © 2025 by Ruby Childs',
   },
   head: (
     <>
