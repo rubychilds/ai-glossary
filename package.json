@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rubychilds/ai-glossary#readme",
   "dependencies": {
+    "google": "link:@next/third-parties/google",
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",

@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import Script from 'next/script'
 
 const config: DocsThemeConfig = {
   logo: (
@@ -15,6 +16,28 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'AI Glossary',
   },
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, 
+  initial-scale=1" />
+      <meta name="theme-color" content="#ffffff" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="msapplication-TileImage" 
+  content="/mstile-150x150.png" />
+      <link rel="icon" type="image/x-icon" 
+  href="/favicon.ico" />
+      <script async src={`https://www.googletagmanager.com/gtag
+  /js?id=${process.env.GOOGLE_ANALYTICS_ID}`} />
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}');
+        `
+      }} />
+    </>
+  )
 }
 
 export default config
