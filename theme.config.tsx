@@ -18,8 +18,15 @@ const config: DocsThemeConfig = {
   },
   head: (
     <>
+      <title>Ruby: AI Glossary</title>
       <meta name="viewport" content="width=device-width, 
   initial-scale=1" />
+      <meta property="og:title" content="Ruby: AI Glossary" />
+      <meta property="og:description" content="A comprehensive glossary of AI terms, concepts, and technologies" />
+      <meta property="og:image" content="/opengraph-ai-glossary.png" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="/opengraph-ai-glossary.png" />
       <meta name="theme-color" content="#ffffff" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="msapplication-TileImage" 
