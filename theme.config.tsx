@@ -1,14 +1,26 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import Script from 'next/script'
+import { useTheme } from 'next-themes'
 
-const config: DocsThemeConfig = {
-  logo: (
+const Logo = () => {
+  const { theme } = useTheme()
+  
+  return (
     <span style={{ display: 'flex', alignItems: 'center', gap: '0.5em' }}>
-      <img src="/Ruby.png" alt="Ruby logo" width="100px" style={{ display: 'inline-block', verticalAlign: 'middle' }} />
+      <img 
+        src={theme === 'dark' ? '/Ruby-white.png' : '/Ruby.png'} 
+        alt="Ruby logo" 
+        width="100px" 
+        style={{ display: 'inline-block', verticalAlign: 'middle' }} 
+      />
       <span>AI Glossary</span>
     </span>
-  ),
+  )
+}
+
+const config: DocsThemeConfig = {
+  logo: <Logo />,
   project: {
     link: 'https://github.com/rubychilds/ai-glossary',
   },
