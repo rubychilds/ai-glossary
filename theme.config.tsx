@@ -47,7 +47,7 @@ const config: DocsThemeConfig = {
       <meta name="viewport" content="width=device-width, 
   initial-scale=1" />
       <meta property="og:title" content="Ruby: AI Glossary" />
-      <meta property="og:description" content="A comprehensive glossary of AI terms, concepts, and technologies" />
+      <meta property="og:description" content="A comprehensive glossary of AI terms, concepts, and technologies designed to help everyone understand and navigate the world of artificial intelligence. Clear, accessible definitions without sacrificing accuracy." />
       <meta property="og:image" content="/opengraph-ai-glossary.png" />
       <meta property="og:type" content="website" />
       <meta name="author" content="Ruby Childs" />
