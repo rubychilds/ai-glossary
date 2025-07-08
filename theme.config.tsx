@@ -53,12 +53,45 @@ const config: DocsThemeConfig = {
   content="/mstile-150x150.png" />
       <link rel="icon" type="image/x-icon" 
   href="/favicon.ico" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       <style dangerouslySetInnerHTML={{
         __html: `
           :root {
             --nextra-primary-hue: 189;
             --nextra-primary-saturation: 96%;
             --nextra-primary-lightness: 64%;
+          }
+          /* Font Face Declarations */
+          @font-face {
+            font-family: 'GT Flexa Standard';
+            src: url('/GT-Flexa-Standard-Regular.bf7ad42b.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+          }
+          @font-face {
+            font-family: 'GT Flexa Standard';
+            src: url('/GT-Flexa-Standard-Bold.1.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+          }
+          @font-face {
+            font-family: 'GT Flexa Standard';
+            src: url('/GT-Flexa-Standard-Black.1.otf') format('opentype');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+          }
+          /* Font family */
+          body, html {
+            font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+          }
+          /* All headings use GT Flexa Standard */
+          h1, h2, h3, h4, h5, h6 {
+            font-family: 'GT Flexa Standard', 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
           }
           /* Button and interactive element styling */
           .nx-bg-primary-600,
