@@ -43,7 +43,6 @@ const config: DocsThemeConfig = {
   },
   head: (
     <>
-      <title>Ruby: AI Glossary</title>
       <meta name="viewport" content="width=device-width, 
   initial-scale=1" />
       <meta property="og:title" content="Ruby: AI Glossary" />
