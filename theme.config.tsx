@@ -32,7 +32,7 @@ const config: DocsThemeConfig = {
       </svg>
     )
   },
-  docsRepositoryBase: 'https://github.com/rubychilds/ai-glossary',
+  docsRepositoryBase: 'https://github.com/rubychilds/ai-glossary/tree/main',
   footer: {
     text: 'AI Glossary © 2025 by Ruby Childs',
   },
