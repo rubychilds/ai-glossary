@@ -50,6 +50,8 @@ const config: DocsThemeConfig = {
       <meta property="og:description" content="A comprehensive glossary of AI terms, concepts, and technologies" />
       <meta property="og:image" content="/opengraph-ai-glossary.png" />
       <meta property="og:type" content="website" />
+      <meta name="author" content="Ruby Childs" />
+      <meta name="publish_date" content="2025-01-08" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="/opengraph-ai-glossary.png" />
       <meta name="theme-color" content="#ffffff" />
