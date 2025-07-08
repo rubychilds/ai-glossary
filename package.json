@@ -1,7 +1,7 @@
 {
   "name": "Ruby: AI Glossary",
   "version": "0.0.1",
-  "description": "Ruby: AI Glossary is a comprehensive glossary of AI terms, concepts, and technologies, designed to help Ruby developers understand and navigate the world of artificial intelligence.",
+  "description": "Ruby: AI Glossary is a comprehensive glossary of AI terms, concepts, and technologies, designed to help everyone understand and navigate the world of artificial intelligence.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -36,6 +36,11 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'AI Glossary © 2025 by Ruby Childs',
   },
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Ruby: AI Glossary'
+    }
+  },
   head: (
     <>
       <title>Ruby: AI Glossary</title>
