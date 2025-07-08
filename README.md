@@ -5,9 +5,10 @@ When I first encountered artificial intelligence, I was overwhelmed by the *jarg
 
 This experience sparked my motivation to create a **comprehensive AI terminology guide** that demystifies the field without dumbing it down. I believe that understanding AI shouldn't require a PhD in computer science, but it also shouldn't sacrifice accuracy for accessibility. My goal is to bridge that gap – to provide clear, precise definitions and explanations that respect both the complexity of the subject and the intelligence of readers who are new to it. This guide represents my attempt to create the resource I wish I had when I first started exploring AI, one that explains not just what these terms mean, but why they matter and how they connect to the broader landscape of artificial intelligence that shapes our world.
 
+
 ## Local Development
 
-First, run `pnpm i` to install the dependencies.
+First, run `pnpm i` to install the dependencies
 
 Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
