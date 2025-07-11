@@ -1,3 +1,11 @@
+import StructuredData from '../../components/StructuredData'
+
+<StructuredData
+  title="Classification"
+  description="A supervised learning task that predicts which category or class an input belongs to. Classification is a fundamental task in supervised learning where the objective is to predict a discrete label or category for a given input."
+  url="https://ai-glossary.com/C/classification"
+/>
+
 # Classification
 
 A supervised learning task that predicts which category or class an input belongs to.

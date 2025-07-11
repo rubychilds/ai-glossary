@@ -2,6 +2,9 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import Script from 'next/script'
 import { useTheme } from 'next-themes'
+import { useRouter } from 'next/router'
+import StructuredData from './components/StructuredData'
+import { extractMetaDescription, getPageUrl } from './lib/utils'
 
 const Logo = () => {
   const { theme } = useTheme()
@@ -37,31 +40,44 @@ const config: DocsThemeConfig = {
     text: 'AI Glossary © 2025 by Ruby Childs',
   },
   useNextSeoProps() {
+    const { asPath } = useRouter()
+    
     return {
-      titleTemplate: '%s – Ruby: AI Glossary'
+      titleTemplate: '%s – Ruby: AI Glossary',
+      description: 'A comprehensive glossary of AI terms, concepts, and technologies designed to help everyone understand and navigate the world of artificial intelligence.',
+      openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        url: getPageUrl(asPath),
+        site_name: 'Ruby: AI Glossary',
+        images: [
+          {
+            url: 'https://ai-glossary.com/opengraph-ai-glossary.png',
+            width: 1200,
+            height: 630,
+            alt: 'Ruby: AI Glossary',
+          },
+        ],
+      },
+      twitter: {
+        handle: '@rubychilds',
+        cardType: 'summary_large_image',
+      },
     }
   },
   head: (
     <>
-      <meta name="viewport" content="width=device-width, 
-  initial-scale=1" />
-      <meta property="og:title" content="Ruby: AI Glossary" />
-      <meta property="og:description" content="A comprehensive glossary of AI terms, concepts, and technologies designed to help everyone understand and navigate the world of artificial intelligence. Clear, accessible definitions without sacrificing accuracy." />
-      <meta property="og:image" content="/opengraph-ai-glossary.png" />
-      <meta property="og:type" content="website" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="author" content="Ruby Childs" />
       <meta name="publish_date" content="2025-01-08" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="/opengraph-ai-glossary.png" />
       <meta name="theme-color" content="#ffffff" />
       <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="msapplication-TileImage" 
-  content="/mstile-150x150.png" />
-      <link rel="icon" type="image/x-icon" 
-  href="/favicon.ico" />
+      <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+      <link rel="manifest" href="/manifest.json" />
       <style dangerouslySetInnerHTML={{
         __html: `
           :root {

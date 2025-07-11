@@ -15,3 +15,7 @@ Then, run `pnpm dev` to start the development server and visit localhost:3000.
 ## License
 
 This project is licensed under the GPL 3.0 License.
+
+Made with ❤️ by Ruby Childs
+
+© 2025 Eyecons. All rights reserved.

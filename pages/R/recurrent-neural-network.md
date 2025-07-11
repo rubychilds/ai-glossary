@@ -1,3 +1,11 @@
+import StructuredData from '../../components/StructuredData'
+
+<StructuredData 
+  title="Recurrent Neural Network (RNN)" 
+  description="A type of neural network designed to work with sequential data by using internal memory. RNNs process sequences by maintaining hidden states that carry information from previous time steps, allowing them to handle variable-length inputs and capture temporal dependencies." 
+  url="https://ai-glossary.com/R/recurrent-neural-network" 
+/>
+
 # Recurrent Neural Network (RNN)
 
 A type of neural network designed to work with sequential data by using internal memory.

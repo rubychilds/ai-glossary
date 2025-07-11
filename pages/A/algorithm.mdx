@@ -1,3 +1,21 @@
+import StructuredData from '../../components/StructuredData'
+import { useRouter } from 'next/router'
+
+export function getStaticProps() {
+  return {
+    props: {
+      title: 'Algorithm',
+      description: 'A set of rules or instructions for solving a problem or completing a task. In AI, an algorithm is a step-by-step computational procedure that takes input data and transforms it into desired output.',
+    }
+  }
+}
+
+<StructuredData
+  title="Algorithm"
+  description="A set of rules or instructions for solving a problem or completing a task. In AI, an algorithm is a step-by-step computational procedure that takes input data and transforms it into desired output."
+  url="https://ai-glossary.com/A/algorithm"
+/>
+
 # Algorithm
 
 A set of rules or instructions for solving a problem or completing a task.

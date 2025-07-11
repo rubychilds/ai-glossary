@@ -1,3 +1,11 @@
+import StructuredData from '../../components/StructuredData'
+
+<StructuredData 
+  title="Tokenization" 
+  description="The process of breaking down text into smaller units (tokens) that can be processed by machine learning models. Tokenization converts raw text into structured units like words, subwords, or characters that AI models can work with." 
+  url="https://ai-glossary.com/T/tokenization" 
+/>
+
 # Tokenization
 
 The process of breaking down text into smaller units (tokens) that can be processed by machine learning models.
